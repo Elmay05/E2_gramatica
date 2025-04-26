@@ -73,12 +73,35 @@ Ahora ya podemos construir la matriz con este First y Follow, esta es como el 'c
 La matriz para esta evidencia está un poco grande que en foto no se podrá apreciar muy bien, pero puedes consultarlo en este archivo[Estados y transiciones.xlsx
 ](https://github.com/Elmay05/E2_gramatica/blob/main/Estados%20y%20transiciones.xlsx)
 
-# Implementación
+# Implementación y pruebas
+Ya que tenemos nuestra gramatica, realizamos nuestra implementación, Implemenatmos un programa en Pyhon que analiza las entradas (las oraciones) llamando a la función con alguna oración, de igual manera en este podremos encontrar pruebas automatizadas, si alguna prueba falla, imprime 'No se puede analizar', este programa lo puedes ver en el archivo de este repositorio
 
+### Pruebas correctas
+1. she is running in the park and He is sleeping in the cinema or You are eating near the school
+2. you are sleeping behind the park
+3. we are eating at the school
+4. he is climbing on the house
+5. she is thinking around the cinema
+6. they are running by the school and we are sleeping
+7. he is eating near the house or she is thinking at the school
+8. it is climbing in the park and you are sleeping by the cinema or I am thinking on the school
 
-# Pruebas
+### Pruebas incorrectas
+1. I is running
+2. They is sleeping
+3. We are eating the house
+4. She sleeping near the park
+5. He is near the park
+6. It is climbing in park
+7. You are
+8. Running in the school
 
-
+## Ejecutar el programa
+Para ejecutar el programa hay 2 opciones, la primera es instalar python si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale NKL en python y luego ejecute el programa.
+La segunda forma, y en caso de fallas, ejecute el programa aquí, está paso por paso:
+[https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing](https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing)
+Al ejecutar el programa, la salida mostrará los arboles analizados para las pruebas exitosas y el mensaje de error para las pruebas fallidas pero qeu contienen la gramatica anteriormente mencionada.
+   
 # Analisis
 
 
