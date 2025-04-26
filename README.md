@@ -54,6 +54,8 @@ Esta gramatica tiene un detalle, el cual es que para una oración, puedes crear 
 Para lograr eliminar la ambigüedad, ocupamos añadir estados intermedios y producciones que indiquen precedencia, esto para eliminar el "o" (por aquí o por aquí) entre estados equivalentes.
 ![image](https://github.com/user-attachments/assets/f5a13f4b-5bd8-4f4c-9d25-0a838d8e2904)
 De esta manera, para una oración, ya crece solo por un lado del arobl evitando tener 2 tipos diferentes de arboles, aunque aún tenemos un problema el cual es la resursividad izquierda.
+![image](https://github.com/user-attachments/assets/454fea64-b56c-4f26-a016-b981a30349f7)
+
 
 ### Eliminar recursividad izquierda
 Este punto es importante, eso principalmente por que la forma en que los parsers procesan el lenguaje es definido por esa gramática, en nuestro caso el LL, este analizador descentente comienza por el simbolo inicial de la gramática e inenta derivar la cadena de entrada expandiendo los no terminales según las reglas de producción, se puede crear una llamada recursiva infinita haciendo que el parser intente expandir los no terminales indefinidamente sin consumir ninguna parte de la entrada, de igual manera ayuda al parser a tomar desiciones deterministas sobre qué producción aplicar basándose en el siguiente símbolo de entrada.
