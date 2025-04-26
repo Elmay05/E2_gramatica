@@ -64,6 +64,15 @@ Este punto es importante, eso principalmente por que la forma en que los parsers
 De esta manera, por el lado izquierdo siempre encontrará los elementos terminales, mientras que del lado derecho irán saliendo los no terminales hasta terminar con la oración se corta con un emptu ε.
 ![image](https://github.com/user-attachments/assets/b8136bc9-7aed-4251-aacf-75f885167ca6)
 
+### Primer y siguiente estado
+Para finalizar, realizamos nuesta tabla de primer y siguiente estado para preparar la construcción del parser, First ayuda cuando tienes un no terminal y quieres saber que producción usar, comparas el token de entrada con los conjuntos de First de cada producción, si la entrada está aquí, la usas, Follow ayuda cuando en el no terminal se encuentra vacio (ε) en el First, si es el caso, usas estos.
+![image](https://github.com/user-attachments/assets/04b2a6ba-4eff-4c13-bcf1-bb0c34dd7077)
+
+Ahora ya podemos construir la matriz con este First y Follow, esta es como el 'cerebro' del parser, se compone de Filas=No terminales y de Columnas=Terminales en cada celda decides que producción aplicar dependiendo del no terminal actual y el token de entrada.
+
+La matriz para esta evidencia está un poco grande que en foto no se podrá apreciar muy bien, pero puedes consultarlo en este archivo[Estados y transiciones.xlsx
+](https://github.com/Elmay05/E2_gramatica/blob/main/Estados%20y%20transiciones.xlsx)
+
 # Implementación
 
 
