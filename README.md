@@ -99,7 +99,9 @@ Ya que tenemos nuestra gramatica, realizamos nuestra implementación, Implemenat
 ## Ejecutar el programa
 Para ejecutar el programa hay 2 opciones, la primera es instalar python si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale NKL en python y luego ejecute el programa.
 La segunda forma, y en caso de fallas, ejecute el programa aquí, está paso por paso:
+
 [https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing](https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing)
+
 Al ejecutar el programa, la salida mostrará los arboles analizados para las pruebas exitosas y el mensaje de error para las pruebas fallidas pero que contienen la gramatica anteriormente mencionada.
 ![image](https://github.com/user-attachments/assets/7cbf9a8e-bcde-41b8-a16c-da35ed3a73fa)
 
