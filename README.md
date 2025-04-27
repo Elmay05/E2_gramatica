@@ -100,12 +100,33 @@ Ya que tenemos nuestra gramatica, realizamos nuestra implementación, Implemenat
 Para ejecutar el programa hay 2 opciones, la primera es instalar python si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale NKL en python y luego ejecute el programa.
 La segunda forma, y en caso de fallas, ejecute el programa aquí, está paso por paso:
 [https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing](https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing)
-Al ejecutar el programa, la salida mostrará los arboles analizados para las pruebas exitosas y el mensaje de error para las pruebas fallidas pero qeu contienen la gramatica anteriormente mencionada.
-   
+Al ejecutar el programa, la salida mostrará los arboles analizados para las pruebas exitosas y el mensaje de error para las pruebas fallidas pero que contienen la gramatica anteriormente mencionada.
+![image](https://github.com/user-attachments/assets/7cbf9a8e-bcde-41b8-a16c-da35ed3a73fa)
+
 # Analisis
+En este proyecto implementamos un analizador sintactico capaz de detectar si alguna de las oraciones se encuentra en una estructura gramatical predefinida, en nuestro caso, implementando el idioma ingles con presente continuo.
+Ahora, segun wikipedia, "La jerarquía de Chomsky  es una clasificación jerárquica de distintos tipos de gramáticas formales que generan lenguajes formales. Esta jerarquía fue descrita por Noam Chomsky en 1956"
+[liga](https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_Chomsky)
 
+Esta jerarquia consta de 4 niveles:
+* Tipo 0 Indecidible: gramaticas sin restricciones (recursivamente enumeradas) esta incluye las gramaticas formales, genera todos los lenguajes reconocidos por una maquina de Turning
+* Tipo 1 NP-Completo: Generan los lenguajes sensibles al contexto, los lenguajes descritos en estas gramaticas son todos los reconocidos por una maquina de Turning determinista, con cinta de memoria acortada por un cierto número entero de veces sobre la longitud de entrada (autómatas linealmente acotados
+* Tipo 2 O(n^3): Gramatiacas libres de contexto, generan lenguajes independientes del contexto, estos lenguajes pueden ser reconocidos por un autómata con pila.
+* Tipo 3 O(n): Gramáticas regulares, generan los lengujajes regulares, son los que pueden ser aceptados por un auómata finito, estos lenguajes se debe optener por medio de expresiones regulares.
 
+Dado que ambas gramaticas con libres de contexto, ambas pertenecen al nivel tipo 2, esto se debe a que en todas las reglas de producción, el lado izquierdo es el único simbolo no terminal
+### Gramatica con ambiguedad y recursion derecha
+Esta surge por la forma en qeu se definen las operaciónes 'and' y 'or' en la regla O -> O 'and' O | O 'or' O permitiendo varios arboles de derivación para una misma cadena
+### Gramatica sin ambiguedad
+Esta se consigue al agregar nos no terminales (T, F, Oa, Ta) forazando una precedencia y asociatividad específica para los operadores 'and' y 'or'.
+
+### Complejidad asintotica
+Gracias a que ambas pertenecen al campo "libre de contexto", segun la jerarquia de Chomsky, estas tienen una complejidad asintotica de O(n^3).
+Es importante mencionar que la gramatica sin ambigüedad, al tener una estructura que clarifica la prodecendia y asociatividad, es mas adecuada para los tipos de parsers LL o LR, pudiendo lograr una complejidad asintotica de O(n), eliminar la ambigüedad es un paso importante para poder construir este ipo de parsers deterministas y eficientes
 
 # Bibliografias
 (inglés, sa). Rae.es. Recuperado el 25 de abril de 2025, de https://dle.rae.es/ingl%C3%A9s
+
+colaboradores de Wikipedia. (2024, 29 noviembre). Jerarquía de Chomsky. Wikipedia, la Enciclopedia Libre. https://es.wikipedia.org/wiki/Jerarqu%C3%ADa_de_Chomsky
+
 
