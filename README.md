@@ -46,6 +46,7 @@ En esta fase se identifican las unidades sintacticas básicas y las reglas que r
 * La conjuncion de preposiciones y lugares
   
 ![image](https://github.com/user-attachments/assets/86b3f6ba-8ece-4430-8526-df88f12375cf)
+
 Esta gramatica tiene un detalle, el cual es que para una oración, puedes crear varios arboles demostrando que es una gramatica ambigüa
 ![image](https://github.com/user-attachments/assets/3ac77876-281a-4c9a-babf-18197f3122c0)
 
