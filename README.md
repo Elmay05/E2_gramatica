@@ -90,14 +90,14 @@ Ya que tenemos nuestra gramatica, realizamos nuestra implementación, Implemenat
 8. it is climbing in the park and you are sleeping by the cinema or I am thinking on the school
 
 ### Pruebas incorrectas
-1. I is running
-2. They is sleeping
-3. We are eating the house
-4. She sleeping near the park
-5. He is near the park
-6. It is climbing in park
-7. You are
-8. Running in the school
+1. I is running // Is no es parte de la gramatica para 'I'->am
+2. They is sleeping // Is no es parte de la gramatica para 'They'->are 
+3. We are eating the house // Le falta la preposicion 
+4. She sleeping near the park //Le falta el verbo to be
+5. He is near the park // Le falta la preposicion 
+6. It is climbing in park // Le falta el articulo 'the'
+7. You are //la oración está incompleta
+8. Running in the school // Le falta el sujeto y el verbo to be
 
 ## Ejecutar el programa
 Para ejecutar el programa hay 2 opciones, la primera es instalar python si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale NKL en python y luego ejecute el programa.
