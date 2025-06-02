@@ -46,7 +46,7 @@ original_sentences = [
     "It is climbing in park",
     "You are",
     "Running in the school"
-
+    
 ]
 # Convert all sentences to lowercase for parsing
 sentences_lowercase = [sentence.lower() for sentence in original_sentences]
@@ -78,4 +78,5 @@ def parse_sentence(sentence):
     else:
         print("No se puede analizar")
 
+#Inserte oración entre corchetes
 parse_sentence("she is running in the park and He is sleeping in the cinema or You are eating near the school")
