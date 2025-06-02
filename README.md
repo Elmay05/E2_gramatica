@@ -100,7 +100,9 @@ Ya que tenemos nuestra gramatica, realizamos nuestra implementación, Implemenat
 8. Running in the school // Le falta el sujeto y el verbo to be
 
 ## Ejecutar el programa
-Para ejecutar el programa hay 2 opciones, la primera es instalar python si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale NKL en python y luego ejecute el programa.
+Para ejecutar el programa hay 2 opciones, la primera es instalar Thonny si aún no lo ha echo, dercargue el archivo [grammartest.py](https://github.com/Elmay05/E2_gramatica/blob/main/grammartest.py), instale nltk en python y luego ejecute el programa.
+Para instalarlo acceda a herramientas>administrar plugins y en la barra de busqueda escribir nltk, haz click en buscar e instalalo.
+Si esto sigue sin funcionar, entra a herramientas>Abre el shell del sistema; y escribe: pip install nltk 
 La segunda forma, y en caso de fallas, ejecute el programa aquí, está paso por paso:
 
 [https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing](https://colab.research.google.com/drive/1lhAGX3vsNjjDJZiCJrH6ZVNm1FwJlgYx?usp=sharing)
